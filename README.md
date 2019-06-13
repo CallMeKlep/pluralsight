@@ -1,4 +1,1 @@
-# pluralsight
-pluralsight js tut
-
-Pluralsight javascript tutorial files 
+# PluralSight Tutorial Stuff
