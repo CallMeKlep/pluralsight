@@ -14,12 +14,8 @@ namespace csharp_fundamentals_01
             {
                 result += number;
             }
-            Console.WriteLine(result);
-
-            if (args.Length > 0)
-            {
-
-            }
+            result /= grades.Count;
+            Console.WriteLine($"The average grade is {result}");
         }
     }
 }
