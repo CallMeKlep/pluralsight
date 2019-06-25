@@ -29,6 +29,11 @@ namespace csharp_fundamentals_01
 
             for(var index = 0; index < grades.Count; index += 1)
             {
+                if(grades[index] == 42.1)
+                {
+                    break;
+                }
+
                 result.High = Math.Max(grades[index], result.High);
                 result.Low = Math.Min(grades[index], result.Low);
                 result.Average += grades[index];
