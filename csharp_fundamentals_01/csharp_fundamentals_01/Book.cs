@@ -31,7 +31,7 @@ namespace csharp_fundamentals_01
             {
                 if(grades[index] == 42.1)
                 {
-                    break;
+                    continue;
                 }
 
                 result.High = Math.Max(grades[index], result.High);
