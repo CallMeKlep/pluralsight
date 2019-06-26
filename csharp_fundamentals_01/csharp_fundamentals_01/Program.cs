@@ -17,7 +17,7 @@ namespace csharp_fundamentals_01
             Console.WriteLine($"The average grade is {stats.Average}");
             Console.WriteLine($"The highest grade is {stats.High}");
             Console.WriteLine($"The lowest grade is {stats.Low}");
-
+            Console.WriteLine($"The letter grade is {stats.Letter}");
         }
     }
 }

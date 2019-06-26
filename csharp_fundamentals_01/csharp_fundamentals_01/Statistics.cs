@@ -9,5 +9,6 @@ namespace csharp_fundamentals_01
         public double Average;
         public double High;
         public double Low;
+        public char Letter;
     }
 }
