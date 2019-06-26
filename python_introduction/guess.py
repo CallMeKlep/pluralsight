@@ -20,11 +20,3 @@ while not found:
     if guess > magicNumber:
         print("Too high")
 print("You got it!")
-
-
-
-
-
-
-
-
