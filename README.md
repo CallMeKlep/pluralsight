@@ -2,4 +2,4 @@
 
 Course | Dir
 ------ | ---
-C\# Funamentals | callmeklep/pluralsight/csharp_fundamentals_01/
+C\# Fundamentals | callmeklep/pluralsight/csharp_fundamentals_01/
