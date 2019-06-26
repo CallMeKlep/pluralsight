@@ -37,7 +37,10 @@ namespace csharp_fundamentals_01
             {
                 grades.Add(grade);
             }
-            else Console.WriteLine("Invaid Value");
+            else
+            {
+                throw new ArgumentException($"Invalid {nameof(grade)}");
+            }
         }
         public Statistics GetStatistics()
         {
