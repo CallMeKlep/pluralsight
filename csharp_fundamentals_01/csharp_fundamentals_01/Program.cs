@@ -35,6 +35,8 @@ namespace csharp_fundamentals_01
 
 
             var stats = book.GetStatistics();
+
+            Console.WriteLine($"For the book named: {book.Name}");
             Console.WriteLine($"The average grade is {stats.Average}");
             Console.WriteLine($"The highest grade is {stats.High}");
             Console.WriteLine($"The lowest grade is {stats.Low}");
