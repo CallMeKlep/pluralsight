@@ -4,6 +4,8 @@ using System.Text;
 
 namespace csharp_fundamentals_01
 {
+    public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
     public class Book
     {
         public Book(string name)
@@ -36,6 +38,10 @@ namespace csharp_fundamentals_01
             if (grade <= 100 && grade >= 0)
             {
                 grades.Add(grade);
+                if(GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
             else
             {
@@ -51,11 +57,6 @@ namespace csharp_fundamentals_01
 
             for(var index = 0; index < grades.Count; index += 1)
             {
-                if(grades[index] == 42.1)
-                {
-                    continue;
-                }
-
                 result.High = Math.Max(grades[index], result.High);
                 result.Low = Math.Min(grades[index], result.Low);
                 result.Average += grades[index];
@@ -83,6 +84,8 @@ namespace csharp_fundamentals_01
 
             return result;
         }
+
+        public event GradeAddedDelegate GradeAdded;
 
         private List<double> grades;
 

@@ -9,8 +9,10 @@ namespace csharp_fundamentals_01
         {
 
             var book = new Book("Sam's Grade Book");
+            book.GradeAdded += OnGradeAdded;
 
-            while(true)
+
+            while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit:");
                 var input = Console.ReadLine();
@@ -23,11 +25,11 @@ namespace csharp_fundamentals_01
                     var grade = double.Parse(input);
                     book.AddGrade(grade);
                 }
-                catch(ArgumentException ex)
+                catch (ArgumentException ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
-                catch(FormatException ex)
+                catch (FormatException ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
@@ -41,6 +43,11 @@ namespace csharp_fundamentals_01
             Console.WriteLine($"The highest grade is {stats.High}");
             Console.WriteLine($"The lowest grade is {stats.Low}");
             Console.WriteLine($"The letter grade is {stats.Letter}");
+        }
+
+        static void OnGradeAdded(object sender, EventArgs e)
+        {
+            Console.WriteLine("A grade was added.");
         }
     }
 }
