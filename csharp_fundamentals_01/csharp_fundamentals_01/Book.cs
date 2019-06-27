@@ -89,10 +89,9 @@ namespace csharp_fundamentals_01
         public string Name
         {
             get;
-            private set;
+            set;
         }
 
-        private string name;
-
+        const string category = "Science";
     }
 }
