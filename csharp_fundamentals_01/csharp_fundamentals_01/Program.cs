@@ -11,7 +11,6 @@ namespace csharp_fundamentals_01
             var book = new Book("Sam's Grade Book");
             book.GradeAdded += OnGradeAdded;
 
-
             while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit:");

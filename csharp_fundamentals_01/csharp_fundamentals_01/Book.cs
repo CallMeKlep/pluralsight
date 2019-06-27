@@ -6,7 +6,7 @@ namespace csharp_fundamentals_01
 {
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
 
-    public class Book
+    public class Book : NamedObject
     {
         public Book(string name)
         {
@@ -88,12 +88,6 @@ namespace csharp_fundamentals_01
         public event GradeAddedDelegate GradeAdded;
 
         private List<double> grades;
-
-        public string Name
-        {
-            get;
-            set;
-        }
 
         const string category = "Science";
     }
