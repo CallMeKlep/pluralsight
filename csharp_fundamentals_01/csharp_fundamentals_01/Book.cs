@@ -88,7 +88,8 @@ namespace csharp_fundamentals_01
 
         public string Name
         {
-            get; set;
+            get;
+            private set;
         }
 
         private string name;
